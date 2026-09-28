@@ -54,7 +54,7 @@ Every image above uses simulated Paper data. No fabricated returns, live account
 
 ## Install and explore
 
-Windows x64. Download the installer and SHA-256 file from [Releases](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest), compare the full hash and read the release notes. **The installer is unsigned.** Do not disable Windows security protections.
+Windows x64. Download the installer, release manifest and SHA-256 file from [Releases](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest), compare the full hashes and read the release notes. **The installer is unsigned.** Do not disable Windows security protections.
 
 Choose Paper to learn the interface or MT5 Demo for broker demonstration trading. A separate MT5 terminal is required for broker accounts. Confirm your account, timezone, risk settings and mode before monitoring.
 

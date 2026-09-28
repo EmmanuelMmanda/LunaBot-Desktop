@@ -28,6 +28,8 @@ Windows x64 desktop distribution. **to the mooon 🌙**
 
 The engine/footer version label remains distinct from the installed desktop version; it is not a different installer download. This release does not claim a signed updater or unattended installation.
 
+The release also includes **LunaBot_0.2.1_release-manifest.json** with installer identity, installed desktop/engine hashes, engine protocol and signing status. SHA256SUMS.txt covers both the installer and that manifest. The manifest is an integrity record, not a signed attestation.
+
 Download the installer and SHA256SUMS.txt from this release. Compare the complete digest using PowerShell:
 
 ```powershell
@@ -46,7 +48,9 @@ Current isolated Paper-engine browser acceptance passed: onboarding, strategy sa
 
 Focused About, settings, report and update-contract checks passed. The public-site checks cover seven scene previews, keyboard tabs, zoom dismissal, theme selection, reduced motion, responsive widths and resource/link validity.
 
-These are software checks, not independent broker certification. The native Windows installer was installed and its binary hashes checked. End-to-end native WebView/real broker journeys are not fully certified by the browser harness. The broader engine suite previously had two timing failures; focused reruns passed, but a new full-suite pass is not claimed here.
+The complete current-source engine regression suite passed **528 tests** in 289.357 seconds. This replaces the earlier incomplete full-suite result.
+
+These are software checks, not independent broker certification. The native Windows installer was installed and its binary hashes checked. End-to-end native WebView/real broker journeys are not fully certified by the browser harness.
 
 Use Demo first. Live activation and account permission are separate controls. Trial access never bypasses execution checks. Read [Product limits](PRODUCT-LIMITS.md).
 
