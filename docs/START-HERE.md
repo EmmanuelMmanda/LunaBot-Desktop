@@ -1,5 +1,7 @@
 # Start here
 
+See the [illustrated installation and workstation guide](https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html) for current screenshots of Overview, Charts, Trade Desk, manual orders, Strategies, connected assistants and Reports.
+
 LunaBot is a Windows desktop trading workstation. Use a Demo account first, follow the in-app setup, and verify the selected account and trading mode before enabling monitoring.
 
 ## Before installation

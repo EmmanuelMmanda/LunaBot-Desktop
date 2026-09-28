@@ -1,5 +1,7 @@
 # LunaBot workstation guide
 
+Prefer an illustrated walkthrough? [Open the visual guide](https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html). Each scene uses the current interface and labelled synthetic Paper data.
+
 LunaBot is a Windows desktop workstation for reviewing trading accounts, analysing markets, preparing orders, monitoring strategies and understanding recorded outcomes. This guide describes the purpose of each workspace area and a practical order of use. It is not trading advice.
 
 ## A typical session
