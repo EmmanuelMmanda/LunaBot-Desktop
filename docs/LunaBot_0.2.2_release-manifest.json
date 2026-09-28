@@ -16,7 +16,7 @@
   },
   "installed_binaries": {
     "lunabot-desktop.exe": {
-      "sha256": "68561a12743a4c3a1abfadfaae0e32f35443c8e1356afd10eda43221bb1f1c36"
+      "sha256": "110c90614d94d854c021bc528091b1f2c2d2e48a42aa85076d7efff511621223"
     },
     "engine/lunabot-engine.exe": {
       "sha256": "5a115e87674ab709bf605501f062f700e9936b609b4ebd26feb24e1098cf27bc",
