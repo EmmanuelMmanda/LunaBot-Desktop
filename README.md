@@ -1,75 +1,50 @@
 <div align="center">
 <img src="docs/assets/lunabot-banner.svg" alt="LunaBot — to the mooon 🌙" width="900">
-<p>A local Windows trading workstation. Charts, deliberate order preparation, strategy monitoring and permission-scoped assistants.</p>
-<p><a href="https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest"><strong>Download 0.2.1</strong></a> · <a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/">Interactive product tour</a> · <a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html">Illustrated guide</a> · <a href="docs/START-HERE.md">First run</a></p>
+<p>A Windows trading workstation for charts, orders, strategies and connected assistants.</p>
+<p><a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/"><strong>Explore LunaBot</strong></a> · <a href="https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest">Download 0.2.1</a> · <a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html">User guide</a></p>
 </div>
 
-![LunaBot manual trading workspace](docs/assets/manual-order.jpg)
+![LunaBot trading workspace](docs/assets/manual-order.jpg)
 
-*Actual interface, disposable Paper profile. All prices and balances are synthetic, not broker performance. Account identifiers removed.*
+*Actual interface with simulated Paper prices and funds. Account identifiers removed.*
 
-## One workstation, a complete trading day
+## Start with setup
 
-Start with account context. Read the market. Prepare an exact order preview. Follow strategy activity and recorded outcomes.
+[Install LunaBot](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/install.html) → [Connect MT5](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/mt5.html) → [Set up a strategy](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/strategies.html) → [Check Overview](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/overview.html)
 
-| Workspace | Purpose | See it |
-| --- | --- | --- |
-| Overview | Account health, exposure and current strategy activity | [Guide](https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html#overview) |
-| Charts | Symbols, timeframes, closed candles and quote freshness | [Guide](https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html#charts) |
-| Trade Desk | Positions, pending orders, proposals and actionable Scouts | [Guide](https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html#trading) |
-| Manual orders | Market/pending terms, protection, exact preview and submission | [Guide](https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html#manual) |
-| Strategies | Versioned rules, market, timeframe and bounded deployment | [Guide](https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html#strategies) |
-| Connected apps | Client selection, scoped permissions and host verification | [Guide](https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html#connected) |
-| Reports | Performance, operational records and supported exports | [Guide](https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html#reports) |
+The illustrated guide follows the app's screens and button names. Each page has section links, previous/next guides and practical steps. The guide works on desktop and phones, with keyboard navigation and Light, Dark or System appearance.
 
-### A closer look
+## Learn LunaBot
 
-<details><summary>Overview — account context in light theme</summary>
+| Guide | What you will learn |
+| --- | --- |
+| [Install & first launch](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/install.html) | Download LunaBot, choose your appearance and set up your first account. |
+| [Connect MT5](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/mt5.html) | Select the right terminal and connect the exact broker account you intend to use. |
+| [Overview & monitoring](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/overview.html) | Check your account, active strategies and open trades before starting the day. |
+| [Charts & markets](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/charts.html) | Follow the right broker symbols and arrange charts for the way you trade. |
+| [Set up strategies](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/strategies.html) | Choose a strategy, review its settings and decide when it may trade. |
+| [Manual trades & orders](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/trading.html) | Prepare an order, review its exact terms and follow the broker’s response. |
+| [Research & backtests](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/research.html) | Set up a historical test, compare changes and read the results with the settings that produced them. |
+| [Trading reports](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/reports.html) | Review trading results, account activity and unresolved orders, then export the period you need. |
+| [Connected apps](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/connected-apps.html) | Connect an assistant to the accounts and actions you choose. |
+| [Settings, updates & help](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/settings.html) | Personalise LunaBot and manage account rules, app access and updates. |
 
-![Overview](docs/assets/overview-light.jpg)
+## Download
 
-</details>
-<details><summary>Charts — market context</summary>
+The [latest release](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest) includes the Windows x64 installer, release manifest and SHA-256 checksums. Compare the full hashes and read the release notes. The current installer is unsigned.
 
-![Charts](docs/assets/charts.jpg)
+Choose Paper for local practice or connect an existing MT5 Demo account. Broker accounts require a separate MT5 terminal. A one-calendar-month offline trial starts on first successful launch. Updating or resetting an ordinary profile does not restart it.
 
-</details>
-<details><summary>Strategies — rules and deployment</summary>
+[Release notes](docs/RELEASE-0.2.1.md) · [Product limits](docs/PRODUCT-LIMITS.md) · [Image notes](docs/IMAGE-NOTES.md)
 
-![Strategies](docs/assets/strategy-library.jpg)
+## About this repository
 
-</details>
-<details><summary>Connected apps — accounts and permissions</summary>
+This repository contains the website, documentation and Windows releases. LunaBot's application source remains private. GitHub-generated source archives contain the public showcase files only.
 
-![Connected apps](docs/assets/connected-apps.jpg)
+LunaBot is an independent developer project. Trading involves risk; Paper and backtest results do not promise future returns.
 
-</details>
-<details><summary>Reports — recorded account outcomes</summary>
+## Support
 
-![Reports](docs/assets/reports.jpg)
-
-</details>
-
-Every image above uses simulated Paper data. No fabricated returns, live account identifiers or external assistant sessions are presented.
-
-## Install and explore
-
-Windows x64. Download the installer, release manifest and SHA-256 file from [Releases](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest), compare the full hashes and read the release notes. **The installer is unsigned.** Do not disable Windows security protections.
-
-Choose Paper to learn the interface or MT5 Demo for broker demonstration trading. A separate MT5 terminal is required for broker accounts. Confirm your account, timezone, risk settings and mode before monitoring.
-
-A **one-calendar-month offline trial** begins on first successful launch. After expiry, new exposure is blocked; visibility, records and non-exposure-increasing management remain available. Updating or an ordinary profile reset does not restart the trial.
-
-[Installation](docs/START-HERE.md) · [Complete workstation reference](docs/WORKSTATION-GUIDE.md) · [Activation and updates](https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html#activation) · [Risk and product limits](docs/PRODUCT-LIMITS.md) · [0.2.1 release notes](docs/RELEASE-0.2.1.md)
-
-## Public materials, private implementation
-
-This repository hosts the product tour, documentation and distributed Windows releases. **The application source is not open source and is not published here.** GitHub-generated source archives contain only these public showcase materials.
-
-LunaBot is an independent developer project, not a profit promise or broker certification. Historical replay and Paper simulations are not evidence of future returns. Read the limits before enabling automation.
-
-## Help
-
-Email [luneya17@gmail.com](mailto:luneya17@gmail.com) or [report a reproducible product issue](https://github.com/EmmanuelMmanda/LunaBot-Desktop/issues). Include version, Windows version and a sanitised screenshot. Send sensitive reports privately; never post credentials, licence tokens, account records or private logs.
+Email [luneya17@gmail.com](mailto:luneya17@gmail.com) or [report a product issue](https://github.com/EmmanuelMmanda/LunaBot-Desktop/issues). Include the installed version and steps to reproduce. Remove passwords, account details, licence tokens and private logs before posting.
 
 Created by Nguli Tz Softwares. **to the mooon 🌙**
