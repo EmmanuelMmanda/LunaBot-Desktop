@@ -48,3 +48,8 @@ LunaBot is an independent developer project. Trading involves risk; Paper and ba
 Email [luneya17@gmail.com](mailto:luneya17@gmail.com) or [report a product issue](https://github.com/EmmanuelMmanda/LunaBot-Desktop/issues). Include the installed version and steps to reproduce. Remove passwords, account details, licence tokens and private logs before posting.
 
 Created by Nguli Tz Softwares. **to the mooon 🌙**
+## AI + LunaBot
+
+Use your compatible assistant to read an account, research a strategy and prepare a trade for review. Start with guided setup and a Demo account.
+
+[Explore MCP and try the interactive examples](https://emmanuelmmanda.github.io/LunaBot-Desktop/mcp.html) · [MCP setup and prompt guide](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/mcp.html) · [Download the latest Windows installer](https://emmanuelmmanda.github.io/LunaBot-Desktop/download.html)
