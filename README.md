@@ -1,7 +1,7 @@
 <div align="center">
 <img src="docs/assets/lunabot-banner.svg" alt="LunaBot — to the mooon 🌙" width="900">
 <p>A Windows trading workstation for charts, orders, strategies and connected assistants.</p>
-<p><a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/"><strong>Explore LunaBot</strong></a> · <a href="https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest">Download 0.2.2</a> · <a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html">User guide</a></p>
+<p><a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/"><strong>Explore LunaBot</strong></a> · <a href="https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest">Download 0.2.5</a> · <a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html">User guide</a></p>
 </div>
 
 ![LunaBot trading workspace](docs/assets/manual-order.jpg)
@@ -35,7 +35,7 @@ The [latest release](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/
 
 Choose Paper for local practice or connect an existing MT5 Demo account. Broker accounts require a separate MT5 terminal.
 
-[Release notes](docs/RELEASE-0.2.2.md) · [Product limits](docs/PRODUCT-LIMITS.md) · [Image notes](docs/IMAGE-NOTES.md)
+[Release notes](docs/RELEASE-0.2.5.md) · [Product limits](docs/PRODUCT-LIMITS.md) · [Image notes](docs/IMAGE-NOTES.md)
 
 ## About this repository
 
