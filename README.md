@@ -45,6 +45,8 @@ LunaBot is an independent developer project. Trading involves risk; Paper and ba
 
 ## Support
 
+Prefer a ZIP? [Download the Windows installer ZIP](https://emmanuelmmanda.github.io/LunaBot-Desktop/download.html?format=zip). Extract it, then run the included setup EXE. It contains the same installer and is not a portable build. The release includes a separate ZIP checksum.
+
 Email [luneya17@gmail.com](mailto:luneya17@gmail.com) or [report a product issue](https://github.com/EmmanuelMmanda/LunaBot-Desktop/issues). Include the installed version and steps to reproduce. Remove passwords, account details, licence tokens and private logs before posting.
 
 Created by Nguli Tz Softwares. **to the mooon 🌙**

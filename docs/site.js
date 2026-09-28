@@ -25,12 +25,15 @@ async function latestWindowsInstaller(){
  if(assets.length!==1)throw Error('A Windows installer could not be identified. Open releases to review the files.');
  const url=new URL(assets[0].browser_download_url);
  if(url.origin!=='https://github.com'||!url.pathname.startsWith('/EmmanuelMmanda/LunaBot-Desktop/releases/download/'))throw Error('Unexpected download address.');
- return {url:url.href,version:release.tag_name};
+ const zipAsset=(release.assets||[]).find(asset=>asset.name===assets[0].name.replace(/\.exe$/,'.zip'));
+ let zipUrl=null;
+ if(zipAsset){const candidate=new URL(zipAsset.browser_download_url);if(candidate.origin==='https://github.com'&&candidate.pathname.startsWith('/EmmanuelMmanda/LunaBot-Desktop/releases/download/'))zipUrl=candidate.href}
+ return {url:url.href,zipUrl,version:release.tag_name};
 }
 const downloadLinks=document.querySelectorAll('[data-download]'),downloadStatus=document.querySelector('#download-status');
 if(downloadLinks.length||downloadStatus){
- latestWindowsInstaller().then(({url,version})=>{
- downloadLinks.forEach(link=>{link.href=url;link.setAttribute('aria-label','Download LunaBot '+version+' for Windows x64')});
- if(downloadStatus){const link=document.querySelector('#resolved-download');link.href=url;link.hidden=false;link.textContent='Download '+version+' for Windows';downloadStatus.textContent='Starting your '+version+' download. If it does not start, use the button below.';location.assign(url);}
+ latestWindowsInstaller().then(({url,zipUrl,version})=>{
+ downloadLinks.forEach(link=>{const archive=link.dataset.download==='zip';if(!archive||zipUrl)link.href=archive?zipUrl:url;link.setAttribute('aria-label','Download LunaBot '+version+' for Windows x64'+(archive?' as ZIP':''))});
+ if(downloadStatus){const archive=new URLSearchParams(location.search).get('format')==='zip';if(archive&&!zipUrl)throw Error('This release has no ZIP alternative. Open releases to choose an available installer.');const target=archive?zipUrl:url;const link=document.querySelector('#resolved-download');link.href=target;link.hidden=false;link.textContent='Download '+version+(archive?' ZIP':' for Windows');downloadStatus.textContent='Starting your '+version+(archive?' ZIP':' installer')+' download. If it does not start, use the button below.';location.assign(target);}
  }).catch(error=>{if(downloadStatus)downloadStatus.textContent=error.message});
 }
