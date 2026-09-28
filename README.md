@@ -1,7 +1,7 @@
 <div align="center">
 <img src="docs/assets/lunabot-banner.svg" alt="LunaBot — to the mooon 🌙" width="900">
 <p>A Windows trading workstation for charts, orders, strategies and connected assistants.</p>
-<p><a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/"><strong>Explore LunaBot</strong></a> · <a href="https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest">Download 0.2.1</a> · <a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html">User guide</a></p>
+<p><a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/"><strong>Explore LunaBot</strong></a> · <a href="https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest">Download 0.2.2</a> · <a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html">User guide</a></p>
 </div>
 
 ![LunaBot trading workspace](docs/assets/manual-order.jpg)
@@ -33,9 +33,9 @@ The illustrated guide follows the app's screens and button names. Each page has 
 
 The [latest release](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest) includes the Windows x64 installer, release manifest and SHA-256 checksums. Compare the full hashes and read the release notes. The current installer is unsigned.
 
-Choose Paper for local practice or connect an existing MT5 Demo account. Broker accounts require a separate MT5 terminal. A one-calendar-month offline trial starts on first successful launch. Updating or resetting an ordinary profile does not restart it.
+Choose Paper for local practice or connect an existing MT5 Demo account. Broker accounts require a separate MT5 terminal.
 
-[Release notes](docs/RELEASE-0.2.1.md) · [Product limits](docs/PRODUCT-LIMITS.md) · [Image notes](docs/IMAGE-NOTES.md)
+[Release notes](docs/RELEASE-0.2.2.md) · [Product limits](docs/PRODUCT-LIMITS.md) · [Image notes](docs/IMAGE-NOTES.md)
 
 ## About this repository
 

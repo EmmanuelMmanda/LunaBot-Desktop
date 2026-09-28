@@ -9,7 +9,7 @@ Windows x64 desktop distribution. **to the mooon 🌙**
 - Manual market/pending order preparation with exact preview before submission.
 - Guided, account-scoped assistant setup and bounded permissions.
 - Report overview, performance and operational review, with supported export/print workflows.
-- One-calendar-month offline trial, device activation and explicit update checks.
+- Device activation and explicit update checks.
 - Quick Monitor, tray preferences and compact trading-mode/startup settings.
 - Closable operational alerts and expansion/draft preservation during polling.
 
@@ -40,7 +40,7 @@ Run the installer only after reviewing Windows security prompts. Do not disable 
 
 ## Updating an existing installation
 
-Review open positions, pending orders and local management before stopping LunaBot. Broker-held exposure can remain open while local management is offline. Install the new build, reopen, reconnect and reconcile before resuming monitoring. Existing account records, settings and protected licensing identity remain in place; an update is not a fresh-trial reset.
+Review open positions, pending orders and local management before stopping LunaBot. Broker-held exposure can remain open while local management is offline. Install the new build, reopen, reconnect and reconcile before resuming monitoring. Existing account records, settings and protected licensing identity remain in place.
 
 ## Verification and limits
 
@@ -52,6 +52,6 @@ The complete current-source engine regression suite passed **528 tests** in 289.
 
 These are software checks, not independent broker certification. The native Windows installer was installed and its binary hashes checked. End-to-end native WebView/real broker journeys are not fully certified by the browser harness.
 
-Use Demo first. Live activation and account permission are separate controls. Trial access never bypasses execution checks. Read [Product limits](PRODUCT-LIMITS.md).
+Use Demo first. Live activation and account permission are separate controls. Account access never bypasses execution checks. Read [Product limits](PRODUCT-LIMITS.md).
 
 Public source archives contain only showcase material, not private application source. Contact: [luneya17@gmail.com](mailto:luneya17@gmail.com).

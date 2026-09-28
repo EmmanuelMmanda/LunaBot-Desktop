@@ -9,7 +9,7 @@ LunaBot is a Windows desktop trading workstation. Use a Demo account first, foll
 - Read the release notes and confirm the installer version and SHA-256 checksum.
 - Windows SmartScreen may report that an installer is unsigned; do not disable security protections to bypass that warning.
 - MT5 is a separate broker dependency. LunaBot can guide terminal detection and account connection.
-- The offline trial runs for one calendar month from first launch on that device. After expiry, new exposure is blocked; account records and position-management tools remain available.
+- Review activation status in Settings → About.
 
 ## First run
 

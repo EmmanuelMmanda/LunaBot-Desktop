@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "product": "LunaBot",
+  "desktop_version": "0.2.2",
+  "release_tag": "v0.2.2",
+  "repository": "EmmanuelMmanda/LunaBot-Desktop",
+  "release_url": "https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/tag/v0.2.2",
+  "platform": "windows",
+  "architecture": "x64",
+  "installer": {
+    "name": "LunaBot_0.2.2_x64-setup.exe",
+    "size_bytes": 241955797,
+    "sha256": "0718bfae729dd16ff8e9c603641f959e248dbe245e2fad106e5c902c9346488b",
+    "download_url": "https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/download/v0.2.2/LunaBot_0.2.2_x64-setup.exe",
+    "authenticode_status": "NotSigned"
+  },
+  "installed_binaries": {
+    "lunabot-desktop.exe": {
+      "sha256": "68561a12743a4c3a1abfadfaae0e32f35443c8e1356afd10eda43221bb1f1c36"
+    },
+    "engine/lunabot-engine.exe": {
+      "sha256": "5a115e87674ab709bf605501f062f700e9936b609b4ebd26feb24e1098cf27bc",
+      "version_label": "0.2.0-rc.2",
+      "protocol_version": 1,
+      "packaged_at_utc": "2026-09-28T13:22:00.382271+00:00"
+    }
+  },
+  "distribution": {
+    "source_code_published": false,
+    "unattended_updates": false,
+    "licensing": "device activation"
+  }
+}
