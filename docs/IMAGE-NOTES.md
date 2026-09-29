@@ -1,15 +1,15 @@
 # Product image notes
 
-The current JPEG previews were captured on 28 September 2026 from LunaBot's actual UI modules against a disposable local Paper engine. No production profile, account connection, broker history or external assistant session was used.
+The current JPEG previews were captured on 29 September 2026 from LunaBot's current UI modules against a disposable local Paper engine. The captures include the current main navigation (including Operations), the expanded-chart control, and the manual ticket's blue Buy / red Sell states. No production profile, MT5 account connection, broker history or external assistant session was used.
 
-All candles, quotes and balances are synthetic. The empty trading queue is intentional, not fabricated performance. Visible account suffixes were removed before capture. The installed desktop version is 0.2.1; the engine/footer label remains 0.2.0-rc.2 as disclosed in release notes.
+All candles, quotes and balances are synthetic. The empty trading queue is intentional, not fabricated performance. Visible account suffixes were removed before capture. These images come from the current UI source in the disposable capture harness; its engine/footer label is `0.2.0-rc.2`. They are not screenshots from a connected broker account or a claim about live performance.
 
 | Image | What it demonstrates |
 | --- | --- |
 | overview.jpg / overview-light.jpg | Account context in dark and light treatments |
 | charts.jpg | Watched symbols and chart analysis |
-| trade-desk.jpg | Distinct trading queues |
-| manual-order.jpg | Chart beside exact order-preparation controls |
+| trade-desk.jpg | Current Trade Desk queues, filters and navigation |
+| manual-order.jpg | Current Paper trading workspace: markets, chart, expand control, blue Buy/red Sell ticket and positions |
 | strategy-library.jpg | Configured strategy deployment |
 | connected-apps.jpg | Client, accounts and permission draft |
 | reports.jpg | Account reporting, without invented returns |
