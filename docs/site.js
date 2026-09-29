@@ -1,6 +1,7 @@
 document.documentElement.classList.add('js');
 const previousGuideLinks={install:'install.html',overview:'overview.html',charts:'charts.html',trading:'trading.html',manual:'trading.html#market',strategies:'strategies.html',connected:'connected-apps.html',reports:'reports.html',activation:'settings.html#activation',help:'settings.html#support'};
 if(location.pathname.endsWith('/guide.html')&&previousGuideLinks[location.hash.slice(1)])location.replace('guides/'+previousGuideLinks[location.hash.slice(1)]);
+if(location.pathname.endsWith('/guide.html')){const settings=document.querySelector('#settings');if(settings){const row=document.createElement('a');row.className='directory-row';row.href='guides/operations.html';row.innerHTML='<div><h3>Operations</h3><p>See setup progress, account health and LunaBot resource use across this computer.</p></div><span aria-hidden="true">↗</span>';settings.after(row)}}
 const appearance=document.querySelector('#site-theme'),media=matchMedia('(prefers-color-scheme: dark)');
 let preference='system';try{preference=localStorage.getItem('lunabot-site-theme')||'system'}catch{}
 if(!['system','light','dark'].includes(preference))preference='system';

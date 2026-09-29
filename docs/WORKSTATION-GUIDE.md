@@ -11,7 +11,8 @@ The complete [LunaBot user guide](https://emmanuelmmanda.github.io/LunaBot-Deskt
 7. [Research & backtests](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/research.html) — Set up a historical test, compare changes and read the results with the settings that produced them.
 8. [Trading reports](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/reports.html) — Review trading results, account activity and unresolved orders, then export the period you need.
 9. [Connected apps](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/connected-apps.html) — Connect an assistant to the accounts and actions you choose.
-10. [Settings, updates & help](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/settings.html) — Personalise LunaBot and manage account rules, app access and updates.
+10. [Operations](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/operations.html) — Check each account's setup, connection, monitoring state and computer resource use.
+11. [Settings, updates & help](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/settings.html) — Personalise LunaBot and manage account rules, app access and updates.
 
 Start with installation and MT5 setup. The longer guides cover strategy settings, manual order preview and submission, and research runs. Smaller reference pages explain charts, reports, account settings and the system tray.
 
