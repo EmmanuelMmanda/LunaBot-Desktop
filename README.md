@@ -1,12 +1,12 @@
 <div align="center">
 <img src="docs/assets/lunabot-banner.svg" alt="LunaBot — to the mooon 🌙" width="900">
 <p>A Windows trading workstation for charts, orders, strategies and connected assistants.</p>
-<p><a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/"><strong>Explore LunaBot</strong></a> · <a href="https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest">Download 0.2.5</a> · <a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html">User guide</a></p>
+<p><a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/"><strong>Explore LunaBot</strong></a> · <a href="https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest">Download the latest public release</a> · <a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html">User guide</a></p>
 </div>
 
-![LunaBot trading workspace](docs/assets/manual-order.jpg)
+![LunaBot Trade Desk with XAUUSD chart, manual Buy and Sell ticket, and account activity](docs/assets/trading-desk-current.png)
 
-*Actual interface with simulated Paper prices and funds. Account identifiers removed.*
+*Current Demo interface with a masked login. The candles are historical; broker quotes were stale or unavailable at capture.*
 
 ## Start with setup
 
@@ -27,15 +27,22 @@ The illustrated guide follows the app's screens and button names. Each page has 
 | [Research & backtests](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/research.html) | Set up a historical test, compare changes and read the results with the settings that produced them. |
 | [Trading reports](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/reports.html) | Review trading results, account activity and unresolved orders, then export the period you need. |
 | [Connected apps](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/connected-apps.html) | Connect an assistant to the accounts and actions you choose. |
+| [Operations](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/operations.html) | Check account setup, connection state, quote freshness and LunaBot-managed computer resources. |
 | [Settings, updates & help](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/settings.html) | Personalise LunaBot and manage account rules, app access and updates. |
 
-## Download
+## Built-in gold strategies
+
+The library includes H1 Trend pullback and experimental Gold scalp M1/M5. Choose a recipe, review its rules and create an inactive draft. New built-in copies use Review mode; nothing is automatically enabled. Existing deployments keep their settings.
+
+The scalp recipes are intended for Demo engine testing, with spread, news and entry-frequency limits. Profitability is unproven. Review each saved strategy before activation.
+
+## Download and verify
 
 The [latest release](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest) includes the Windows x64 installer, release manifest and SHA-256 checksums. Compare the full hashes and read the release notes. The current installer is unsigned.
 
 Choose Paper for local practice or connect an existing MT5 Demo account. Broker accounts require a separate MT5 terminal.
 
-[Release notes](docs/RELEASE-0.2.5.md) · [Product limits](docs/PRODUCT-LIMITS.md) · [Image notes](docs/IMAGE-NOTES.md)
+[Release notes](docs/RELEASE-0.2.7.md) · [Product limits](docs/PRODUCT-LIMITS.md) · [Image notes](docs/IMAGE-NOTES.md)
 
 ## About this repository
 
