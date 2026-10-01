@@ -11,3 +11,9 @@ LunaBot is a desktop tool for market observation, strategy evaluation, order wor
 - MCP access is limited to the accounts and permissions granted to each connection. Review and revoke grants you no longer need.
 
 No profitability, broker certification, investment advice or independent audit is claimed.
+
+## The 1.0 release candidate
+
+The 1.0.0-rc.1 engine freeze is a release candidate, not production certification. The 45 research hypotheses are disabled for trading. Synthetic selection checks are not historical market returns; zero new research candidates are financially qualified. Some daily data, historical costs and rule adapters remain blocked. Account limits are not a cross-host ownership fence or a combined portfolio guarantee.
+
+Trusted code signing, clean-machine installation and broker acceptance remain outstanding gates. Normal downloads continue to resolve only the published non-prerelease channel. Read [release status](releases.html) before choosing a build.

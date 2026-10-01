@@ -42,7 +42,9 @@ The [latest release](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/
 
 Choose Paper for local practice or connect an existing MT5 Demo account. Broker accounts require a separate MT5 terminal.
 
-[Release notes](docs/RELEASE-0.2.7.md) · [Product limits](docs/PRODUCT-LIMITS.md) · [Image notes](docs/IMAGE-NOTES.md)
+[Release status](https://emmanuelmmanda.github.io/LunaBot-Desktop/releases.html) · [Product limits](docs/PRODUCT-LIMITS.md) · [Image notes](docs/IMAGE-NOTES.md)
+
+The 1.0.0-rc.1 candidate freezes the desktop and engine for verification. It is not yet production stable. Its research catalog contains 45 starting hypotheses, not 45 trading-ready strategies. The standard download remains on the published non-prerelease channel. Trusted signing and installed broker acceptance remain open.
 
 ## About this repository
 
