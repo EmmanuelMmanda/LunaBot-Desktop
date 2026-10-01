@@ -38,13 +38,13 @@ The scalp recipes are intended for Demo engine testing, with spread, news and en
 
 ## Download and verify
 
-The [latest release](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest) includes the Windows x64 installer, release manifest and SHA-256 checksums. Compare the full hashes and read the release notes. The current installer is unsigned.
+The [latest non-prerelease build](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest) includes the Windows x64 installer, release manifest and SHA-256 checksums. Compare the full hashes and read the release notes. That build's installer is unsigned.
 
 Choose Paper for local practice or connect an existing MT5 Demo account. Broker accounts require a separate MT5 terminal.
 
 [Release status](https://emmanuelmmanda.github.io/LunaBot-Desktop/releases.html) · [Product limits](docs/PRODUCT-LIMITS.md) · [Image notes](docs/IMAGE-NOTES.md)
 
-The 1.0.0-rc.1 candidate freezes the desktop and engine for verification. It is not yet production stable. Its research catalog contains 45 starting hypotheses, not 45 trading-ready strategies. The standard download remains on the published non-prerelease channel. Trusted signing and installed broker acceptance remain open.
+The [1.0.0-rc.1 prerelease](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/tag/v1.0.0-rc.1) freezes the desktop and engine for verification. Its installer is locally self-signed and timestamped, **not publicly trusted**; Windows warnings can remain. The enclosed app and engine remain unsigned. It is not production stable. Its research catalog contains 45 starting hypotheses, not 45 trading-ready strategies. The standard download remains on the published non-prerelease channel. Trusted signing and installed broker acceptance remain open.
 
 ## About this repository
 
