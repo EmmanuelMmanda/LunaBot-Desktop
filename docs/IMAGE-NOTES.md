@@ -16,9 +16,10 @@ All candles, quotes and balances are synthetic. The empty trading queue is inten
 | strategy-library.jpg | Configured strategy deployment |
 | connected-apps.jpg | Client, accounts and permission draft |
 | reports.jpg | Account reporting, without invented returns |
+| windows-smartscreen.svg | An explanatory recreation of the two SmartScreen states users may encounter; Windows wording and layout can vary |
 
 The crescent is the existing product mark. Typography uses the locally bundled Figtree variable font, distributed under its [SIL Open Font License](assets/FONT-LICENSE.txt).
 
 These images illustrate interface workflows, not future returns or verified broker performance.
 
-The expanded guide also uses four focused captures from the same disposable setup: `setup-welcome.jpg`, `setup-mt5.jpg`, `strategy-parameters.jpg` and `backtest-setup.jpg`. The MT5 image shows the account form only; login and password are empty, and its example login placeholder was replaced with a generic label. No terminal connection was submitted. The strategy and research forms show their actual controls; no broker order was placed.
+The expanded guide also uses four focused captures from the same disposable setup: `setup-welcome.jpg`, `setup-mt5.jpg`, `strategy-parameters.jpg` and `backtest-setup.jpg`. The MT5 image shows the account form only; login and password are empty, and its example login placeholder was replaced with a generic label. No terminal connection was submitted. The strategy and research forms show their actual controls; no broker order was placed. `windows-smartscreen.svg` is documentation artwork, not a claim that every Windows release shows identical wording.

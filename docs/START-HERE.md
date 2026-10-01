@@ -7,7 +7,7 @@ LunaBot is a Windows desktop trading workstation. Use a Demo account first, foll
 ## Before installation
 
 - Read the release notes and confirm the installer version and SHA-256 checksum.
-- Windows SmartScreen may report that an installer is unsigned; do not disable security protections to bypass that warning.
+- Windows SmartScreen may pause before opening the installer. Follow the illustrated [SmartScreen checkpoint](guides/install.html#smartscreen): choose **More info**, match the installer name and SHA-256 to the official release, then use **Run anyway** only when they match. Do not disable Windows protection.
 - MT5 is a separate broker dependency. LunaBot can guide terminal detection and account connection.
 - Review activation status in Settings → About.
 

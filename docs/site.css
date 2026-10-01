@@ -15,3 +15,5 @@ dialog{padding:16px;border:1px solid #415344;border-radius:9px;background:#10171
 @media print{.site-header,.site-footer,.guide-sidebar,.page-toc,.guide-topline,.page-pager,.mobile-toc,.image-open>span{display:none!important}.docs-layout{display:block;max-width:none;padding:0}.article{color:#111}.article-section{break-inside:avoid}.article-section p,.article-section li,.article-section dd{color:#222}}
 /* Standalone release notes retain the guide reading width. */
 .release-page{max-width:850px;margin:0 auto;padding:48px 24px 64px}
+.checkpoint-list{list-style:none;padding:0;margin:22px 0;border-top:1px solid var(--line)}.checkpoint-list li{display:grid;grid-template-columns:minmax(155px,.7fr) 1.3fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--line)}.checkpoint-list strong{font-size:15px}.checkpoint-list span{color:var(--muted);font-size:14px}.guide-callout{margin:24px 0 8px;padding:18px 20px;border-left:3px solid var(--accent);background:var(--soft);border-radius:0 6px 6px 0}.guide-callout p{margin-top:6px!important}
+@media(max-width:600px){.checkpoint-list li{grid-template-columns:1fr;gap:5px}.guide-callout{padding:16px}}
