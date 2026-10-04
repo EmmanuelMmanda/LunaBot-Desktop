@@ -1,3 +1,9 @@
+# Current release images
+
+Captured 4 October 2026 from the 1.0.1-rc.1 UI against a disposable local Paper engine: release-overview.jpg, release-operations.jpg, release-research.jpg, release-mt5-prepare.jpg and release-trade-desk.jpg. Prices and balances are synthetic. No broker account, password, licence key or private profile was used. The MT5 screenshot shows setup controls, not a completed installation.
+
+The landing page and manual-trading guide now use release-trade-desk.jpg. Older images below are historical illustrations, not current-build acceptance evidence.
+
 # Product image notes
 
 The current JPEG previews were captured on 29 September 2026 from LunaBot's current UI modules against a disposable local Paper engine. The captures include the current main navigation (including Operations), the expanded-chart control, and the manual ticket's blue Buy / red Sell states. No production profile, MT5 account connection, broker history or external assistant session was used.
