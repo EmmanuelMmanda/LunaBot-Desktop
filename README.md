@@ -4,15 +4,17 @@
 <p><a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/"><strong>Explore LunaBot</strong></a> · <a href="https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest">Download the latest public release</a> · <a href="https://emmanuelmmanda.github.io/LunaBot-Desktop/guide.html">User guide</a></p>
 </div>
 
-![LunaBot Trade Desk with XAUUSD chart, manual Buy and Sell ticket, and account activity](docs/assets/release-trade-desk.jpg)
+![LunaBot Demo Trade Desk with a readable XAUUSD M5 candlestick chart, blue Buy and red Sell controls, and empty activity panel](docs/assets/trading-desk-current.png)
 
-*Current 1.0.1-rc.2 interface in an isolated Paper profile. Prices and balances are simulated; this is not broker performance.*
+*Owner-provided Demo screenshot. The chart shows closed historical candles; its quote was stale or unavailable at capture. It is not a live-price or performance claim.*
 
 ## Start with setup
 
 [Install LunaBot](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/install.html) → [Connect MT5](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/mt5.html) → [Set up a strategy](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/strategies.html) → [Check Overview](https://emmanuelmmanda.github.io/LunaBot-Desktop/guides/overview.html)
 
 The illustrated guide follows the app's screens and button names. Each page has section links, previous/next guides and practical steps. The guide works on desktop and phones, with keyboard navigation and Light, Dark or System appearance.
+
+For an MT5 account, onboarding guides you from account type to a dedicated terminal, broker access, identity verification and sync. After installation, LunaBot opens that terminal so you can create or sign in to the broker account; monitoring remains off until you choose to start it.
 
 ## Learn LunaBot
 

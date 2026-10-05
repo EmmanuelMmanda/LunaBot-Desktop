@@ -2,13 +2,13 @@
 
 Captured 4 October 2026 from the 1.0.1-rc.1 UI against a disposable local Paper engine: release-overview.jpg, release-operations.jpg, release-research.jpg, release-mt5-prepare.jpg and release-trade-desk.jpg. Prices and balances are synthetic. No broker account, password, licence key or private profile was used. The MT5 screenshot shows setup controls, not a completed installation.
 
-The landing page and manual-trading guide now use release-trade-desk.jpg. Older images below are historical illustrations, not current-build acceptance evidence.
+The landing page, manual-trading guide and repository README use `trading-desk-current.png`, the owner-provided XAUUSD M5 Demo capture documented below. `release-trade-desk.jpg` is an older Paper illustration and must not replace that chart on those surfaces.
 
 # Product image notes
 
 The current JPEG previews were captured on 29 September 2026 from LunaBot's current UI modules against a disposable local Paper engine. The captures include the current main navigation (including Operations), the expanded-chart control, and the manual ticket's blue Buy / red Sell states. No production profile, MT5 account connection, broker history or external assistant session was used.
 
-`trading-desk-current.png` is the exact owner-provided LunaBot Demo screenshot captured on 29 September 2026. It is used on the landing page, the manual-trading guide and the repository README. The login remains masked as shown in the image. At capture time the watched XAUUSD quote was stale/unavailable; the visible chart shows historical closed candles and is not a live-price claim. The screenshot shows no open positions or orders.
+`trading-desk-current.png` is the exact owner-provided LunaBot Demo screenshot captured on 29 September 2026. Its chart uses distinct OHLC candle bodies and high/low wicks, with green up candles, coral down candles, and EMA 20/50 overlays—the same chart appearance requested for the public landing page, manual-trading guide and repository README. The login remains masked as shown. At capture time the watched XAUUSD quote was stale/unavailable; the chart shows historical closed candles and is not a live-price claim. The screenshot shows no open positions or orders.
 
 All candles, quotes and balances are synthetic. The empty trading queue is intentional, not fabricated performance. Visible account suffixes were removed before capture. These images come from the current UI source in the disposable capture harness; its engine/footer label is `0.2.0-rc.2`. They are not screenshots from a connected broker account or a claim about live performance.
 
