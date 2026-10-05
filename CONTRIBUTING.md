@@ -11,4 +11,4 @@ Open a pull request into `develop`, check links, accessibility, responsive layou
 
 Do not publish private LunaBot source, account data, credentials, signing keys, or private diagnostics here. Never force-push `main` or `develop`, and never move an existing release tag.
 
-The public repo's `develop` branch was initialized from the current published `main` tip on 2026-10-05. Existing legacy worktree changes must be reviewed before their branches are removed; old documentation must not overwrite the currently published pilot pages without review.
+The public repo's `develop` branch was initialized from the published `main` tip on 2026-10-05. Legacy draft edits were preserved in a local-only stash and were not promoted because their release wording predates the current pilot pages. The current `main` content remains authoritative.
