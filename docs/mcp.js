@@ -1,39 +1,63 @@
 const examples = {
   health: {
-    title: 'Demo account health',
-    request: 'Check my Demo account health. Verify connection, prices and sync, review strategy activity, and flag anything unusual. Do not change anything.',
+    title: 'XAUUSD · Demo health',
+    request: 'Can I trade XAUUSD on my Demo account right now?',
     steps: [
-      ['Confirm shared account', 'connection_capabilities + list_accounts', 'The client can see only accounts and permissions granted to that connection. This is illustrative, not a real lookup.'],
-      ['Check connection and prices', 'account_summary + runtime_health', 'Example result: connection is available, but the watched XAUUSD quote is stale. A real response must include its own update time.'],
-      ['Inspect strategy activity', 'list_strategies + strategy_activity', 'Example result: one strategy is paused. No strategy is started or changed by this read.'],
-      ['Check data quality and anomalies', 'runtime_health + reconciliation_report', 'The stale quote is reported as a data-quality issue; the assistant does not infer a market move from missing freshness.'],
-      ['Explain evidence and safe next step', 'assistant response - no order tool', 'The assistant recommends refreshing or verifying the feed before relying on the quote. No order was requested or sent.']
+      ['Confirm account', 'list_accounts', 'Sample Demo · login ••8042 · connected'],
+      ['Count exposure', 'account_summary', '2 open positions · 1 pending order'],
+      ['Check XAUUSD', 'runtime_health', 'Last quote 94 s ago · stale'],
+      ['Review restrictions', 'connection_capabilities', 'New entry needs a fresh quote'],
+      ['Give next step', 'assistant response', 'Refresh the feed and check again. No order sent.']
     ],
-    summary: 'Evidence-led result: one stale quote is visible; no account settings or trades were changed.'
+    decision: 'WAIT FOR A FRESH QUOTE', metrics: [['2','open positions'],['1','pending order'],['94 s','quote age']],
+    reply: ['I found two positions and one pending order. XAUUSD has not updated for ', '94 seconds', ', so I would wait.'],
+    summary: 'The account is connected, but the example XAUUSD quote is stale. New entry stays blocked until a fresh price and risk check are available.',
+    next: 'Refresh the feed, then ask LunaBot to check again.'
   },
   strategy: {
-    title: 'Strategy review',
-    request: 'Review my Demo strategies. Compare their latest decisions with current data quality and explain any reason for no trade. Do not start or edit them.',
+    title: 'XAUUSD · strategy decision',
+    request: 'Why did my XAUUSD strategy skip its last setup?',
     steps: [
-      ['Confirm selected account', 'connection_capabilities + list_accounts', 'Only accounts explicitly shared with this client are in scope.'],
-      ['Read strategy configuration', 'list_strategies + strategy_deployments', 'The assistant reads names, state and declared markets; it does not assume a strategy is profitable.'],
-      ['Inspect latest evaluations', 'strategy_activity + strategy_details', 'Example result: the latest evaluation was blocked because its required quote was stale.'],
-      ['Check supporting market data', 'account_summary + explain_strategy', 'The returned symbol and timestamp must match the strategy inputs. Missing data stays unavailable.'],
-      ['Summarise limits and next step', 'assistant response - read only', 'The assistant explains the recorded no-trade reason and suggests reviewing the feed. No strategy is changed or activated.']
+      ['Find deployment', 'strategy_deployments', 'XAUUSD · M5 · observing'],
+      ['Read saved rule', 'strategy_details', 'Maximum spread 25 pt'],
+      ['Find decision', 'strategy_activity', 'Signal at 14:35 UTC'],
+      ['Explain rejection', 'explain_strategy', 'Observed spread 38 pt · limit exceeded'],
+      ['Give next step', 'assistant response', 'Review conditions before changing the rule.']
     ],
-    summary: 'A useful review can end with a clear no-trade explanation; historical results do not guarantee future performance.'
+    decision: 'NO TRADE · SPREAD LIMIT', metrics: [['38 pt','observed spread'],['25 pt','saved limit'],['0','orders sent']],
+    reply: ['The M5 candle rule passed. Spread was ', '38 points against a 25-point limit', ', so LunaBot skipped the trade.'],
+    summary: 'The candle rule passed. The observed spread exceeded the saved limit by 13 points, so LunaBot recorded a skip.',
+    next: 'Inspect the saved limit and the market before changing any rule.'
   },
   anomaly: {
-    title: 'Operational anomaly review',
-    request: 'Investigate anything unusual on my shared Demo account. Separate confirmed evidence from uncertainty, and do not take action.',
+    title: 'EURUSD · order trace',
+    request: 'Did my EURUSD order go through after the reconnect?',
     steps: [
-      ['Confirm account scope', 'connection_capabilities + list_accounts', 'The assistant verifies the allowed account before requesting any records.'],
-      ['Read connection and sync state', 'account_summary + runtime_health', 'Example result: account connected; the last successful sync is older than expected.'],
-      ['Check orders and positions', 'account_summary + list_pending_orders', 'The assistant compares returned records with the sync status; it does not infer that a missing record is zero.'],
-      ['Inspect recorded incidents', 'reconciliation_report + investigation_context', 'An event shows a worker reconnect. The cause is not claimed unless the event records it.'],
-      ['Report facts and uncertainty', 'assistant response - no action tool', 'The assistant names the stale sync, lists what evidence is missing and recommends a fresh reconciliation. No trade or restart is performed.']
+      ['Locate request', 'investigation_context', 'EURUSD · request 4F2'],
+      ['Inspect response', 'runtime_health', 'Worker reconnected · response uncertain'],
+      ['Check broker records', 'reconciliation_report', 'Outcome not yet confirmed'],
+      ['Check duplicate guard', 'list_pending_orders', 'No automatic repeat request'],
+      ['Give next step', 'assistant response', 'Reconcile before deciding whether to retry.']
     ],
-    summary: 'An anomaly report should distinguish observed facts, unavailable data and recommended checks.'
+    decision: 'VERIFY BEFORE RETRY', metrics: [['1','uncertain request'],['0','automatic retries'],['?','broker outcome']],
+    reply: ['The broker response is ', 'still uncertain', '. I cannot confirm a fill or safely repeat the request yet.'],
+    summary: 'A reconnect interrupted the response. Broker orders and positions must be reconciled before the outcome can be stated.',
+    next: 'Review reconciliation in Operations. Do not resubmit the same request yet.'
+  },
+  trade: {
+    title: 'XAUUSD · trade idea',
+    request: 'Explore an XAUUSD setup and show the risk.',
+    steps: [
+      ['Check market', 'account_summary', 'XAUUSD · M5 · closed candles'],
+      ['Review setup', 'strategy_details', 'Example entry 4,168.20'],
+      ['Outline risk', 'account_summary', 'Stop 4,164.20 · 4.00 price distance'],
+      ['Prepare Scout', 'connection_capabilities', 'Illustrative 0.01 lot · review required'],
+      ['Give next step', 'assistant response', 'Review exact costs and broker checks in LunaBot.']
+    ],
+    decision: 'REVIEW A PROPOSAL', metrics: [['4.00','price stop distance'],['0.01','illustrative lots'],['0','orders sent']],
+    reply: ['Here is a setup to review: ', 'entry 4,168.20 · stop 4,164.20', '. It is a proposal; no order was sent.'],
+    summary: 'This sample proposal has an entry and stop. Actual size, cost, broker limits and permissions depend on the selected account.',
+    next: 'Open the proposal in LunaBot and approve or reject it there.'
   }
 };
 
@@ -49,14 +73,14 @@ if (demo) {
   document.querySelector('#try-it')?.before(setup);
 
   const tabs = [...demo.querySelectorAll('[data-scenario]')];
-  ['Check account health', 'Review a strategy', 'Investigate an anomaly'].forEach((label, i) => {
-    tabs[i]?.setAttribute('data-scenario', ['health', 'strategy', 'anomaly'][i]);
+  ['Account health', 'Strategy review', 'Trade idea', 'Trade activity'].forEach((label, i) => {
+    tabs[i]?.setAttribute('data-scenario', ['health', 'strategy', 'trade', 'anomaly'][i]);
     if (tabs[i]) tabs[i].textContent = label;
   });
 
   const grid = demo.querySelector('.demo-grid');
   if (grid) {
-    grid.innerHTML = '<section class="demo-chat" aria-label="Example assistant conversation"><span class="eyebrow">Example conversation</span><div class="chat-message user-message"><span>You</span><blockquote id="demo-request"></blockquote></div><div class="chat-message assistant-message"><span>Assistant</span><div class="assistant-answer" aria-live="polite" aria-atomic="true"><span class="live-dot" aria-hidden="true"></span><p id="demo-answer">Select Play or Next to see the example tool calls and evidence.</p></div></div><p class="mock-disclaimer">Illustration only - no real account, balance or broker request</p><div class="demo-controls"><button class="button" id="demo-play">Play walkthrough</button><button class="copy-prompt" id="demo-next">Next step</button><button class="copy-prompt" id="demo-reset">Reset</button><span id="demo-status" role="status" aria-live="polite">Ready to demonstrate</span></div></section><section class="demo-desk" aria-label="Illustrative account-scoped tool-call timeline"><div class="demo-market"><strong id="demo-title"></strong><span id="demo-badge">SIMULATED WORKFLOW</span></div><ol class="demo-timeline">' + Array.from({ length: 5 }, (_, i) => '<li data-stage="' + i + '"><span class="timeline-node">0' + (i + 1) + '</span><div><strong data-stage-title></strong><small data-stage-tool></small><p data-stage-result>Waiting for the example.</p></div><span class="stage-state">Waiting</span></li>').join('') + '</ol><div id="demo-result" class="demo-result">No account data is being fetched. This is an illustration, not a live MCP session.</div></section>';
+    grid.innerHTML = '<section class="demo-chat" aria-label="Example assistant conversation"><span class="eyebrow">Example conversation</span><div class="chat-message user-message"><span>You</span><blockquote id="demo-request"></blockquote></div><div class="chat-message assistant-message"><span>Assistant · through LunaBot</span><div class="assistant-answer" aria-live="polite" aria-atomic="true"><span class="live-dot" aria-hidden="true"></span><p id="demo-answer">Select Play or Next to inspect the example.</p></div></div><div class="demo-controls"><button class="button" id="demo-play">Play conversation</button><button class="copy-prompt" id="demo-next">Next</button><button class="copy-prompt" id="demo-reset">Reset</button><span id="demo-status" role="status" aria-live="polite">Ready to demonstrate</span></div><p class="mock-disclaimer">Illustrative figures · no broker or account data was read</p></section><section class="demo-desk" aria-label="Illustrative account evidence and decision"><div class="demo-market"><strong id="demo-title"></strong><span id="demo-badge">SAMPLE DATA</span></div><ol class="demo-timeline">' + Array.from({ length: 5 }, (_, i) => '<li data-stage="' + i + '"><span class="timeline-node">0' + (i + 1) + '</span><div><strong data-stage-title></strong><small data-stage-tool></small><p data-stage-result>Waiting</p></div><span class="stage-state">Waiting</span></li>').join('') + '</ol><div id="demo-result" class="demo-result"><span class="result-kicker">EXAMPLE DECISION</span><strong id="demo-decision"></strong><div id="demo-metrics" class="demo-metrics"></div><p id="demo-insight"></p><div class="demo-next"><b>NEXT</b><span id="demo-followup"></span></div></div></section>';
   }
 
   let scenario = 'health';
@@ -68,8 +92,21 @@ if (demo) {
     const example = examples[scenario];
     byId('demo-request').textContent = example.request;
     byId('demo-title').textContent = example.title;
-    byId('demo-answer').textContent = step < 0 ? 'Select Play or Next to see the example tool calls and the assistant response.' : example.steps[step][2];
-    byId('demo-result').textContent = step === example.steps.length - 1 ? example.summary : step < 0 ? 'No account data is being fetched. This is an illustration, not a live MCP session.' : 'Illustrative sequence only. In LunaBot, tool access is limited by the permissions you granted.';
+    const answer = byId('demo-answer');
+    if (step === example.steps.length - 1) {
+      const emphasis = document.createElement('strong'); emphasis.textContent = example.reply[1];
+      answer.replaceChildren(document.createTextNode(example.reply[0]), emphasis, document.createTextNode(example.reply[2]));
+    } else answer.textContent = step < 0 ? 'I’ll check the shared account and show the evidence behind the next step.' : example.steps[step][2];
+    byId('demo-decision').textContent = step === example.steps.length - 1 ? example.decision : 'Building the picture…';
+    byId('demo-metrics').replaceChildren();
+    if (step === example.steps.length - 1) example.metrics.forEach(([value,label]) => {
+      const metric = document.createElement('div');
+      const number = document.createElement('strong'); number.textContent = value;
+      const caption = document.createElement('span'); caption.textContent = label;
+      metric.append(number, caption); byId('demo-metrics').append(metric);
+    });
+    byId('demo-insight').textContent = step === example.steps.length - 1 ? example.summary : 'Follow the returned evidence above. Sample figures appear with the decision.';
+    byId('demo-followup').textContent = step === example.steps.length - 1 ? example.next : 'Continue the conversation.';
     demo.querySelectorAll('[data-stage]').forEach((row, index) => {
       const item = example.steps[index];
       row.removeAttribute('aria-current');
@@ -79,9 +116,9 @@ if (demo) {
       const result = row.querySelector('[data-stage-result]');
       row.classList.toggle('is-current', index === step);
       row.classList.toggle('is-complete', index < step);
-      if (index < step) { state.textContent = 'Returned'; result.textContent = item[2]; }
-      else if (index === step) { state.textContent = 'Returned'; result.textContent = item[2]; row.setAttribute('aria-current', 'step'); }
-      else { state.textContent = 'Waiting'; result.textContent = 'Waiting for this example step.'; row.removeAttribute('aria-current'); }
+      if (index < step) { state.textContent = 'Seen'; result.textContent = item[2]; }
+      else if (index === step) { state.textContent = 'Seen'; result.textContent = item[2]; row.setAttribute('aria-current', 'step'); }
+      else { state.textContent = 'Next'; result.textContent = 'Reveals as the example continues.'; row.removeAttribute('aria-current'); }
     });
     byId('demo-play').textContent = timer ? 'Pause walkthrough' : 'Play walkthrough';
     byId('demo-next').textContent = step === example.steps.length - 1 ? 'Restart walkthrough' : 'Next step';
