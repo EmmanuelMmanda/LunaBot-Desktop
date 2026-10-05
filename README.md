@@ -46,7 +46,7 @@ Choose Paper for local practice or connect an existing MT5 Demo account. Broker 
 
 [Release status](https://emmanuelmmanda.github.io/LunaBot-Desktop/releases.html) · [Product limits](docs/PRODUCT-LIMITS.md) · [Image notes](docs/IMAGE-NOTES.md)
 
-The [1.0.1-rc.2 pilot build](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/tag/v1.0.1-rc.2) includes the updated Trade Desk and is intended for installed MT5 Demo acceptance. Its installer is locally self-signed and timestamped, **not publicly trusted**; Windows warnings can remain. The enclosed app and engine remain unsigned. It is not production stable, and successful Demo sign-in, two-account isolation and Live behavior are not yet certified. The standard download remains on the published non-prerelease channel; [choose the pilot build explicitly](https://emmanuelmmanda.github.io/LunaBot-Desktop/download.html?channel=pilot).
+The [1.0.1-rc.3 pilot build](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/tag/v1.0.1-rc.3) includes the updated Trade Desk and the four illustrative MCP conversations in onboarding. It is intended for installed MT5 Demo acceptance. Its installer is locally self-signed and timestamped, **not publicly trusted**; Windows warnings can remain. The enclosed app and engine remain unsigned. It is not production stable, and successful Demo sign-in, two-account isolation and Live behavior are not yet certified. The standard download remains on the published non-prerelease channel; [choose the pilot build explicitly](https://emmanuelmmanda.github.io/LunaBot-Desktop/download.html?channel=pilot).
 
 ## About this repository
 

@@ -70,7 +70,7 @@ if (demo) {
   setup.id = 'connect';
   setup.setAttribute('aria-labelledby', 'mcp-connect-title');
   setup.innerHTML = '<div class="section-heading"><p class="eyebrow">Set up once</p><h2 id="mcp-connect-title">From connected client to useful answer.</h2><p>The assistant can see only the accounts and tools you explicitly share in LunaBot.</p></div><ol><li><span>01</span><strong>Choose your client</strong><p>Open <b>Settings &gt; Connected apps</b> and select Codex, Claude Desktop, Claude Code or another supported MCP client.</p></li><li><span>02</span><strong>Choose account and access</strong><p>Start with a Demo account and account records. Add research or proposal permissions only when needed.</p></li><li><span>03</span><strong>Apply its configuration</strong><p>Follow the client-specific setup LunaBot provides. Restart that client if required; preserve unrelated MCP connections.</p></li><li><span>04</span><strong>Verify a real request</strong><p>Ask for account status without changes, then confirm the request appears in Connected apps activity.</p></li></ol><p class="mcp-setup-link"><a class="button" href="guides/connected-apps.html">Open connected-app setup guide</a> <a class="quiet-link" href="guides/mcp.html">Read prompts and permissions</a></p>';
-  document.querySelector('#try-it')?.before(setup);
+  document.querySelector('#connect')?.replaceWith(setup);
 
   const tabs = [...demo.querySelectorAll('[data-scenario]')];
   ['Account health', 'Strategy review', 'Trade idea', 'Trade activity'].forEach((label, i) => {
