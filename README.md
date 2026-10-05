@@ -6,7 +6,7 @@
 
 ![LunaBot Trade Desk with XAUUSD chart, manual Buy and Sell ticket, and account activity](docs/assets/release-trade-desk.jpg)
 
-*Current 1.0.1-rc.1 interface in an isolated Paper profile. Prices and balances are simulated; this is not broker performance.*
+*Current 1.0.1-rc.2 interface in an isolated Paper profile. Prices and balances are simulated; this is not broker performance.*
 
 ## Start with setup
 
@@ -44,7 +44,7 @@ Choose Paper for local practice or connect an existing MT5 Demo account. Broker 
 
 [Release status](https://emmanuelmmanda.github.io/LunaBot-Desktop/releases.html) · [Product limits](docs/PRODUCT-LIMITS.md) · [Image notes](docs/IMAGE-NOTES.md)
 
-The [1.0.1-rc.1 prerelease](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/tag/v1.0.1-rc.1) freezes the desktop and engine for verification. Its installer is locally self-signed and timestamped, **not publicly trusted**; Windows warnings can remain. The enclosed app and engine remain unsigned. It is not production stable. Its research catalog contains 45 starting hypotheses, not 45 trading-ready strategies. The standard download remains on the published non-prerelease channel. Trusted signing and installed broker acceptance remain open.
+The [1.0.1-rc.2 pilot build](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/tag/v1.0.1-rc.2) includes the updated Trade Desk and is intended for installed MT5 Demo acceptance. Its installer is locally self-signed and timestamped, **not publicly trusted**; Windows warnings can remain. The enclosed app and engine remain unsigned. It is not production stable, and successful Demo sign-in, two-account isolation and Live behavior are not yet certified. The standard download remains on the published non-prerelease channel; [choose the pilot build explicitly](https://emmanuelmmanda.github.io/LunaBot-Desktop/download.html?channel=pilot).
 
 ## About this repository
 
