@@ -14,6 +14,6 @@ No profitability, broker certification, investment advice or independent audit i
 
 ## The 1.0 release candidate
 
-The 1.0.1-rc.2 pilot build is a release candidate, not production certification. The 45 research hypotheses are disabled for trading. Synthetic selection checks are not historical market returns; zero new research candidates are financially qualified. Some daily data, historical costs and rule adapters remain blocked. Account limits are not a cross-host ownership fence or a combined portfolio guarantee.
+The 1.0.1-rc.4 pilot build is a release candidate, not production certification. The 45 research hypotheses are disabled for trading. Synthetic selection checks are not historical market returns; zero new research candidates are financially qualified. Some daily data, historical costs and rule adapters remain blocked. Account limits are not a cross-host ownership fence or a combined portfolio guarantee.
 
 The candidate installer is locally self-signed and timestamped, not publicly trusted. Its enclosed desktop and engine remain unsigned; Windows warnings can remain. Trusted code signing, clean-machine installation and broker acceptance remain outstanding gates. Normal downloads continue to resolve only the published non-prerelease channel. Read [release status](releases.html) before choosing a build.
