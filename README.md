@@ -40,13 +40,13 @@ The scalp recipes are intended for Demo engine testing, with spread, news and en
 
 ## Download and verify
 
-The [latest non-prerelease build](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest) includes the Windows x64 installer, release manifest and SHA-256 checksums. Compare the full hashes and read the release notes. That build's installer is unsigned.
+The [latest non-prerelease build](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest) includes the Windows x64 installer, release manifest and SHA-256 checksums. Compare the full hashes and read the release notes before opening it.
 
 Choose Paper for local practice or connect an existing MT5 Demo account. Broker accounts require a separate MT5 terminal.
 
 [Release status](https://emmanuelmmanda.github.io/LunaBot-Desktop/releases.html) · [Product limits](docs/PRODUCT-LIMITS.md) · [Image notes](docs/IMAGE-NOTES.md)
 
-The [1.0.1-rc.2 pilot build](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/tag/v1.0.1-rc.2) includes the updated Trade Desk and is intended for installed MT5 Demo acceptance. Its installer is locally self-signed and timestamped, **not publicly trusted**; Windows warnings can remain. The enclosed app and engine remain unsigned. It is not production stable, and successful Demo sign-in, two-account isolation and Live behavior are not yet certified. The standard download remains on the published non-prerelease channel; [choose the pilot build explicitly](https://emmanuelmmanda.github.io/LunaBot-Desktop/download.html?channel=pilot).
+The [1.0.1-rc.15 pilot build](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/tag/v1.0.1-rc.15) corrects MT5 workspace controls: each account has a separate portable workspace, the corner MT5 panel reports the exact process identity, and a valid MetaQuotes terminal is checked using Windows PowerShell's own signature module. Signature checking remains strict. It is intended for installed MT5 Demo acceptance. Its installer is locally self-signed and timestamped, **not publicly trusted**; Windows warnings can remain. It is not production stable: the second Demo sign-in, clean-machine acceptance, full update recovery and all Live behavior remain unverified. The standard download remains on the published non-prerelease channel; [choose the pilot build explicitly](https://emmanuelmmanda.github.io/LunaBot-Desktop/download.html?channel=pilot).
 
 ## About this repository
 
