@@ -40,13 +40,11 @@ The scalp recipes are intended for Demo engine testing, with spread, news and en
 
 ## Download and verify
 
-The [latest non-prerelease build](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest) includes the Windows x64 installer, release manifest and SHA-256 checksums. Compare the full hashes and read the release notes before opening it.
+The latest public stable build is [LunaBot 0.2.5](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/latest). The release includes the Windows x64 installer, release manifest and SHA-256 checksums. Compare the full hashes and read the release notes before opening it. The website's Download button always resolves the latest non-prerelease release.
 
 Choose Paper for local practice or connect an existing MT5 Demo account. Broker accounts require a separate MT5 terminal.
 
 [Release status](https://emmanuelmmanda.github.io/LunaBot-Desktop/releases.html) · [Product limits](docs/PRODUCT-LIMITS.md) · [Image notes](docs/IMAGE-NOTES.md)
-
-The [1.0.1-rc.22 pilot build](https://github.com/EmmanuelMmanda/LunaBot-Desktop/releases/tag/v1.0.1-rc.22) adds durable, exact-account prospective history qualification for the 28-strategy E28 Demo evaluation. A candle is accepted only when continuous retained witnesses bracket its complete native interval under one account, portable terminal, process, build, catalog and policy identity. It does not retroactively qualify old history. E28 is still disabled while MT5 permissions and the required history/session coverage remain blocked. The installer is locally self-signed, **not publicly trusted**; Windows warnings can remain. It is not production stable: clean-machine, second-account and all Live behavior remain unverified. The standard download remains on the published non-prerelease channel; [choose the pilot build explicitly](https://emmanuelmmanda.github.io/LunaBot-Desktop/download.html?channel=pilot).
 
 ## About this repository
 
